@@ -1,0 +1,83 @@
+.tabs {
+  display: flex;
+  position: relative;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 400px;
+  background-color: burlywood;
+}
+
+.tab-item {
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 50px;
+
+  border-radius: 5px;
+  /* background-color: red; */
+
+  transition: 0.25s all ease-in-out;
+}
+.tab-item:hover {
+  cursor: pointer;
+}
+.tab-item:active {
+  transform: scale(0.95);
+}
+.tab-area {
+  text-align: center;
+  margin: 10px;
+  flex: auto;
+  position: relative;
+  width: 100%;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+
+#close-first-tab {
+  position: absolute;
+  top: 7%;
+  left: 89%;
+  transition: 0.15s all ease-in;
+}
+#close-second-tab {
+  position: absolute;
+  top: 7%;
+  left: 89%;
+  transition: 0.15s all ease-in;
+}
+#close-third-tab {
+  position: absolute;
+  top: 7%;
+  left: 89%;
+  transition: 0.15s all ease-in;
+}
+span:hover {
+  color: salmon;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.tab-content {
+  display: none;
+  width: 500px;
+  border: 1px solid greenyellow;
+  animation: fadeEffect 2s;
+}
+
+.active {
+  box-shadow: 3px 3px 3px inset;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
