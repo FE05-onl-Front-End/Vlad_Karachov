@@ -1,0 +1,20 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(61, 173, 29, 0.8046568969384629) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.bubble {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: aquamarine;
+  box-shadow: 1px 1px 1px 1px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
